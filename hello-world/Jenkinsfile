@@ -4,31 +4,37 @@ pipeline {
         stage('Static Analysis') {
             steps {
                 echo 'Run the static analysis to the code' 
+                echo 'Static Analysis by Rohan Vanmali'
             }
         }
         stage('Compile') {
             steps {
-                echo 'Compile the source code' 
+                echo 'Compile the source code'
+                echo 'Compile by Rohan Vanmali'
             }
         }
         stage('Security Check') {
             steps {
-                echo 'Run the security check against the application' 
+                echo 'Run the security check against the application'
+                echo 'Security Check by Rohan Vanmali'
             }
         }
         stage('Run Unit Tests') {
             steps {
-                echo 'Run unit tests from the source code' 
+                echo 'Run unit tests from the source code'
+                echo 'Run Unit Tests by Rohan Vanmali'
             }
         }
         stage('Run Integration Tests') {
             steps {
-                echo 'Run only crucial integration tests from the source code' 
+                echo 'Run only crucial integration tests from the source code'
+                echo 'Run Integration test by Rohan Vanmali'
             }
         }
         stage('Publish Artifacts') {
             steps {
-                echo 'Save the assemblies generated from the compilation' 
+                echo 'Save the assemblies generated from the compilation'
+                echo 'Publish Artifacts by Rohan Vanmali'
             }
         }
     }
